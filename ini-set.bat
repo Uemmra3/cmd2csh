@@ -1,3 +1,4 @@
+: c:\src_uem\cmd2csh\ini-set.bat
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 : BASIC SET
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -44,6 +45,8 @@ doskey ccd= cd $*
 doskey vi= vim $*
 doskey less= vim -R $*
 doskey sl= dir /b $*
+doskey ks= dir /b $*
+doskey kls= dir /b $*
 doskey va= vagrant $*
 
 : todo autoload vim(Kaoriya)
