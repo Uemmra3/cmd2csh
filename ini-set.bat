@@ -1,3 +1,6 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+: BASIC SET
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 : imitate unix
 doskey ls= dir /b $*
 doskey l= dir $*
@@ -34,15 +37,26 @@ doskey sl= dir /b $*
 doskey ccd= cd $*
 
 
-::::::::::::::::::::::::::::::::::::::::::::
-: NOTE: delete these lines below if Error
-::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+: NOTE: delete these lines below if Error occurs
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 : oretoku (specially for Uemmra3)
 doskey vi= vim $*
 doskey less= vim -R $*
 doskey sl= dir /b $*
 doskey va= vagrant $*
 
+: todo autoload vim(Kaoriya)
+: start http://www.kaoriya.net/software/vim/
+
 
 : oretoku misstype
 doskey lses= vim -R $*
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+: DANGER 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+doskey rm_f= del /S /Q $*
+
+
+
