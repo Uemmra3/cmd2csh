@@ -1,6 +1,5 @@
 : imitate unix
 doskey ls= dir /b $*
-doskey sl= dir /b $*
 doskey l= dir $*
 doskey s= dir /b $*
 doskey ll= attrib
@@ -19,8 +18,6 @@ doskey rmb= del *~
 doskey pwd= cd
 doskey cat= type $*
 doskey h= doskey /history
-doskey vi= vim $*
-doskey less= vim -R $*
 doskey diff= fc $*
 doskey alias= doskey /macros
 doskey grep= find $*
@@ -29,3 +26,23 @@ doskey grep= find $*
 doskey u= cd ..
 doskey uu= cd ..\..
 doskey uuu= cd ..\..\..
+doskey uuuu= cd ..\..\..
+
+
+: misstype
+doskey sl= dir /b $*
+doskey ccd= cd $*
+
+
+::::::::::::::::::::::::::::::::::::::::::::
+: NOTE: delete these lines below if Error
+::::::::::::::::::::::::::::::::::::::::::::
+: oretoku (specially for Uemmra3)
+doskey vi= vim $*
+doskey less= vim -R $*
+doskey sl= dir /b $*
+doskey va= vagrant $*
+
+
+: oretoku misstype
+doskey lses= vim -R $*
