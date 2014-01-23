@@ -1,4 +1,9 @@
-: c:\src_uem\cmd2csh\ini-set.bat
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+: To start automatically, edit registory as below.
+:  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor
+:  AutoRun=c:\wk_uem\cmd2csh\ini-set.bat
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 : BASIC SET
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -30,12 +35,14 @@ doskey grep= find $*
 doskey u= cd ..
 doskey uu= cd ..\..
 doskey uuu= cd ..\..\..
-doskey uuuu= cd ..\..\..
-
+doskey uuuu= cd ..\..\..\..
 
 : misstype
 doskey sl= dir /b $*
 doskey ccd= cd $*
+doskey sl= dir /b $*
+doskey ks= dir /b $*
+doskey kls= dir /b $*
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -44,9 +51,6 @@ doskey ccd= cd $*
 : oretoku (specially for Uemmra3)
 doskey vi= vim $*
 doskey less= vim -R $*
-doskey sl= dir /b $*
-doskey ks= dir /b $*
-doskey kls= dir /b $*
 doskey va= vagrant $*
 
 : todo autoload vim(Kaoriya)
