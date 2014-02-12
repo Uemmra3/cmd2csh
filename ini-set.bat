@@ -1,8 +1,9 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 : To start automatically, edit registory as below.
-:  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor
-:  AutoRun=c:\wk_uem\cmd2csh\ini-set.bat
+: reg add "HKLM\SOFTWARE\Microsoft\Command Processor" /v AutoRun /t REG_SZ /d c:\wk_uem\cmd2csh\ini-set.bat /f
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo "immutating Un*x"
+echo off
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 : BASIC SET
@@ -27,6 +28,7 @@ doskey rmb= del *~
 doskey pwd= cd
 doskey cat= type $*
 doskey h= doskey /history
+doskey history= doskey /history
 doskey diff= fc $*
 doskey alias= doskey /macros
 doskey grep= find $*
