@@ -58,6 +58,7 @@ doskey va= vagrant $*
 : todo autoload vim(Kaoriya)
 : start http://www.kaoriya.net/software/vim/
 
+doskey uem= cd c:\wk_uem
 
 : oretoku misstype
 doskey lses= vim -R $*
